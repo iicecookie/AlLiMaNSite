@@ -1,23 +1,27 @@
-import React from 'react'
-import Footer from './components/footer'
+import React, {Component} from 'react';
+import Footer from './components/footer';
+import Header from './components/header';
+import KittenList from './components/kittenList';
+import './styles/css/style.css';
+import './styles/css/bootstrap.css';
+import './styles/css/styles.css';
 import {useTranslation} from 'react-i18next';
-import elf from './styles/images/Eflie.JPG'
 
 function App() {
-
-    const { t, i18n } = useTranslation();
+    const {i18n} = useTranslation();
 
     const changeLanguage = (language) => {
         i18n.changeLanguage(language);
     };
 
     return (
-        <div className="App">
+        <div id='page' className="header_stick_wrap">
 
-            <button onClick={() => changeLanguage("en")}>EN</button>
-            <button onClick={() => changeLanguage("ru")}>RU</button>
-            <hr />
- 
+            <Header/>
+
+            <KittenList/>
+
+
             <Footer/>
         </div>
 

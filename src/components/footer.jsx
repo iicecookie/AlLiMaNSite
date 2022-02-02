@@ -1,28 +1,26 @@
 import React from 'react';
-import "../styles/css/styles.css";
-import "../styles/css/style.css";
-import '../styles/css/bootstrap.css';
 import logo from '../styles/images/logo.png';
 import instagram from '../styles/images/instagram.png';
 import facebook from '../styles/images/facebook.png';
 import whatsapp from '../styles/images/whatsapp.png';
-import {facebookAdress, instagramAdress, whatsappAdress,
-        mainTelephone, mainTelephoneLink, contactMail,contactMailLink, } from '../Constant.js';
+import {
+    facebookAdress, instagramAdress, whatsappAdress,
+    mainTelephone, mainTelephoneLink, contactMail, contactMailLink
+} from '../Constant.js';
 
-import {useTranslation} from "react-i18next";
+import {useTranslation} from 'react-i18next';
 
 const Footer = () => {
-
     const {t} = useTranslation();
 
     return (<div className="main-container">
-            <footer className={"footer"}>
+            <footer className={'footer'}>
                 <div className="row ">
 
                     <div className="col-md-3">
                         <div className="footer__logo">
                             <a><img src={logo} alt="title"/></a>
-                            <div><a>{t("title")} <span>{t('cattery')}</span></a></div>
+                            <div><a>{t('title')} <span>{t('cattery')}</span></a></div>
                         </div>
                     </div>
 
@@ -58,12 +56,16 @@ const Footer = () => {
 
                     <div className="col-md-5">
                         <div className="subs">
-                            <p>{t("footerDescription")}</p>
-                            <form method="POST" encType="multipart/form-data" action="#" className="form-inline ajax">
+                            <p>{t('footerDescription')}</p>
+                            <form method="POST" encType="multipart/form-data"
+                                  action="#" className="form-inline ajax">
                             </form>
                         </div>
                     </div>
 
+
+                    <button onClick={() => changeLanguage('en')}>EN</button>
+                    <button onClick={() => changeLanguage('ru')}>RU</button>
                 </div>
             </footer>
         </div>

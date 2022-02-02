@@ -3,6 +3,10 @@
   "cattery": "БРИТАНСКИХ КОШЕК",
   "views": {
     "ourCats": "Наши кошки",
+    "our":{
+      "gentlemen": "Коты",
+      "ladies": "Кошки"
+    },
     "kittens": "Котята",
     "pLitters": "Предыдущие пометы",
     "testimonials": "Отзывы",

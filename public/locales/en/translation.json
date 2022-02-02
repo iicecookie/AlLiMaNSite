@@ -3,6 +3,10 @@
   "cattery": "CATTERY",
   "views": {
     "ourCats": "Our cats",
+    "our":{
+      "gentlemen": "Gentlemen",
+      "ladies": "Ladies"
+    },
     "kittens": "Kittens",
     "pLitters": "Previous litters",
     "testimonials": "Testimonials",

@@ -1027,6 +1027,9 @@ body.offcanvas {overflow: hidden}
 
 .thumbs_wrap {overflow: hidden}
 
+.thumbs_fixed{
+    height: 400px;
+}
 .fotorama-wrap {
     overflow: hidden;
     position: relative;
