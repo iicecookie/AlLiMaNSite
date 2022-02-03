@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
 import '../styles/fonts/font.css';
-import logo from '../styles/images/logo.png';
-import instagram from '../styles/images/instagram.png';
-import facebook from '../styles/images/facebook.png';
-import whatsapp from '../styles/images/whatsapp.png';
+import logo from '../styles/icons/logo.png';
+import instagram from '../styles/icons/instagram.png';
+import facebook from '../styles/icons/facebook.png';
+import whatsapp from '../styles/icons/whatsapp.png';
 import {
     facebookAdress, instagramAdress, whatsappAdress,
     mainTelephone, mainTelephoneLink, contactMail, contactMailLink,
@@ -31,6 +31,11 @@ function Header() {
         return () => window.removeEventListener("scroll", listenScrollEvent);
     }, []);
 
+    const {i18n} = useTranslation();
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    };
+
     const {t} = useTranslation();
     return (
         <div>
@@ -43,7 +48,7 @@ function Header() {
                                 <div><a href="index.html">{t("title")} <span>{t("cattery")}</span></a></div>
                             </div>
                         </div>
-                        <div className="col-auto menu-1">
+                        <div className="col-auto ">
                             <ul>
                                 <li><a href="kittens.html">{t('views.kittens')}</a></li>
                                 <li><a href="previous-litters.html">{t('views.ourCats')}</a></li>
@@ -53,13 +58,25 @@ function Header() {
                                 <li><a href="contacts.html">{t('views.contacts')}</a></li>
                             </ul>
                         </div>
-                        <div className="col-auto menusocial">
+                        <div className="col-lg-1 menusocial">
                             <a href={instagramAdress}>
                                 <img className="icon icon-instagram" src={instagram} alt="title"/></a>
                             <a href={facebookAdress}>
                                 <img className="icon icon-facebook" src={facebook} alt="title"/></a>
                             <a href={whatsappAdress}>
                                 <img className="icon icon-whatsapp" src={whatsapp} alt="title"/></a>
+                        </div>
+
+                        <div className="col-auto menusocial">
+                                <button className='flag-btn'>
+                                    <img className='flag'
+                                         src={require("../styles/icons/UsFlag.png")}
+                                         onClick={() => changeLanguage('en')}/>
+                                </button>
+                            <button className='flag-btn'>
+                                <img className='flag' src={require("../styles/icons/RuFlag.png")}
+                                     onClick={() => changeLanguage('ru')}/>
+                            </button>
                         </div>
                     </div>
                 </div>

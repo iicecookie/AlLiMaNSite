@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../styles/images/logo.png';
-import instagram from '../styles/images/instagram.png';
-import facebook from '../styles/images/facebook.png';
-import whatsapp from '../styles/images/whatsapp.png';
+import logo from '../styles/icons/logo.png';
+import instagram from '../styles/icons/instagram.png';
+import facebook from '../styles/icons/facebook.png';
+import whatsapp from '../styles/icons/whatsapp.png';
 import {
     facebookAdress, instagramAdress, whatsappAdress,
     mainTelephone, mainTelephoneLink, contactMail, contactMailLink
@@ -64,8 +64,6 @@ const Footer = () => {
                     </div>
 
 
-                    <button onClick={() => changeLanguage('en')}>EN</button>
-                    <button onClick={() => changeLanguage('ru')}>RU</button>
                 </div>
             </footer>
         </div>

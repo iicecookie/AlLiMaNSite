@@ -2,27 +2,27 @@ import React from 'react';
 import '../styles/fonts/font.css';
 import '../styles/css/image-gallery.css'
 import ImageGallery from 'react-image-gallery';
+import PropTypes from "prop-types";
 
-const images = [
-    {
-        original: require("../userfiles/shop/medium/elfie4.JPG"),
-        thumbnail: require("../userfiles/shop/medium/elfie4.JPG")
-    },
-    {
-        original: require("../userfiles/shop/medium/elfie1.JPG"),
-        thumbnail: require("../userfiles/shop/medium/elfie1.JPG")
-    },
-    {
-        original: require("../userfiles/shop/medium/elfie2.JPG"),
-        thumbnail: require("../userfiles/shop/medium/elfie2.JPG")
-    },
-    {
-        original: require("../userfiles/shop/medium/elfie3.JPG"),
-        thumbnail: require("../userfiles/shop/medium/elfie3.JPG")
-    },
-];
+const Kitten = (props) => {
 
-const Kitten = () => {
+    function getImages(){
+        let images =[];
+        for (let i = 0; i < 5; i++) {
+            images[i]={
+                original:  require(`../userfiles/shop/${props.kitten.name}/${props.kitten.name}${i+1}.JPG`),
+                thumbnail: require(`../userfiles/shop/${props.kitten.name}/${props.kitten.name}${i+1}.JPG`),
+            };
+        }
+        console.log(props.kittenCount);
+        return images;
+    }
+
+    function isLastBlock(){
+        if(props.kittenCount== props.kitten.id){return true}
+        return false;
+    }
+
     return (
         <div className="litter_list__header">
             <div className="litter_list__headername"><h2><a href="kittens/litter-w88.html">Litter W2</a></h2>
@@ -59,7 +59,7 @@ const Kitten = () => {
                 <div className="col-md-8">
                     <div className="thumbs_wrap">
                         <div className="thumbs_fixed">
-                            <ImageGallery items={images}
+                            <ImageGallery items={getImages()}
                                           infinite={true}
                                           thumbnailPosition={'left'}
                                           slideOnThumbnailOver={true}
@@ -69,9 +69,15 @@ const Kitten = () => {
                     </div>
                 </div>
             </div>
-        </div>
 
+            <hr  style={{visibility: isLastBlock() ? 'hidden' : 'visible' }} />
+        </div>
     );
+};
+
+Kitten.propTypes = {
+    kitten: PropTypes.object.isRequired,
+    kittenCount: PropTypes.number.isRequired,
 };
 
 export default Kitten;
