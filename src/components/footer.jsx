@@ -6,7 +6,7 @@ import whatsapp from '../styles/icons/whatsapp.png';
 import {
     facebookAdress, instagramAdress, whatsappAdress,
     mainTelephone, mainTelephoneLink, contactMail, contactMailLink
-} from '../contentData/constant.js';
+} from '../contentData/Constant.js';
 
 import {useTranslation} from 'react-i18next';
 
