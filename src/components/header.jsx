@@ -8,7 +8,7 @@ import whatsapp from '../styles/icons/whatsapp.png';
 import {
     facebookAdress, instagramAdress, whatsappAdress,
     mainTelephone, mainTelephoneLink, contactMail, contactMailLink,
-} from '../Constant.js';
+} from '../contentData/constant.js';
 
 import {useTranslation, withTranslation} from 'react-i18next';
 
@@ -50,8 +50,8 @@ function Header() {
                         </div>
                         <div className="col-auto ">
                             <ul>
-                                <li><a href="kittens.html">{t('views.kittens')}</a></li>
-                                <li><a href="previous-litters.html">{t('views.ourCats')}</a></li>
+                                <li><a href="kittens">{t('views.kittens')}</a></li>
+                                <li><a href="our-cats">{t('views.ourCats')}</a></li>
                                 <li><a href="previous-litters.html">{t('views.pLitters')}</a></li>
                                 <li><a href="testimonials.html">{t('views.testimonials')}</a></li>
                                 <li><a href="files.html">{t('views.wallpapers')}</a></li>

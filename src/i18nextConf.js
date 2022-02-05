@@ -13,7 +13,7 @@ i18n
     .init({
         // Стандартный язык
         fallbackLng: 'en',
-        debug: true,
+        debug: false,
 
         react: {
             useSuspense: false

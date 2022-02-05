@@ -1,8 +1,17 @@
 import React, {useState} from 'react';
 import Kitten from '../components/kitten';
 import PropTypes from "prop-types";
+import {kittensForSale} from "../contentData/kittenForSale/kittensForSale";
+import {AlLiManLitters} from "../contentData/litter";
 
 const KittenList = (props) => {
+
+    const kittens = kittensForSale;
+    const litters = AlLiManLitters;
+
+    function GetLitter(kitten){
+        return litters[kitten.litterId-1]
+    }
 
     return (
         <div>
@@ -10,8 +19,11 @@ const KittenList = (props) => {
                 <section className="litter_list">
                     <div className="container-fluid">
                         <section className="litter_list litter_m0">
-                            {props.kittens.map(kitten =>
-                                <Kitten kitten={kitten} kittenCount={props.kittens.length} key={kitten.id}/>
+                            {kittens.map(kitten =>
+                                <Kitten key={kitten.id}
+                                        kitten={kitten}
+                                        kittenCount={kittens.length}
+                                        litter={GetLitter(kitten)}/>
                             )}
                         </section>
                     </div>
@@ -22,8 +34,6 @@ const KittenList = (props) => {
 };
 
 KittenList.propTypes = {
-    kittens: PropTypes.array.isRequired,
-    kittenCount: PropTypes.number.isRequired,
 };
 
 export default KittenList;
