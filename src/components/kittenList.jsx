@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Kitten from '../components/kitten';
 import PropTypes from "prop-types";
-import {kittensForSale} from "../contentData/kittenForSale/kittensForSale";
+import {kittensForSale} from "../contentData/kittenForSale/KittensForSale";
 import {AlLiManLitters} from "../contentData/Litter";
 
 const KittenList = (props) => {
