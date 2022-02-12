@@ -8,7 +8,7 @@ import whatsapp from '../../styles/icons/whatsapp.png';
 import {
     facebookAdress, instagramAdress, whatsappAdress,
     mainTelephone, mainTelephoneLink, contactMail, contactMailLink,
-} from '../../contentData/Constant.js';
+} from '../../contentData/Contacts.js';
 
 import {useTranslation, withTranslation} from 'react-i18next';
 import {Link} from "react-router-dom";
@@ -51,12 +51,12 @@ function Header() {
                         </div>
                         <div className="col-auto ">
                             <ul>
-                                <li><Link to="/kittens">              {t('views.kittens')}</Link></li>
-                                <li><Link to="/our-cats">             {t('views.ourCats')}</Link></li>
-                                <li><Link to="/previous-litters.html">{t('views.pLitters')}</Link></li>
-                                <li><Link to="/testimonials.html">    {t('views.testimonials')}</Link></li>
-                                <li><Link to="/files.html">           {t('views.wallpapers')}</Link></li>
-                                <li><Link to="/contacts.html">        {t('views.contacts')}</Link></li>
+                                <li><Link to="/kittens">         {t('views.kittens')}</Link></li>
+                                <li><Link to="/our-cats">        {t('views.ourCats')}</Link></li>
+                                <li><Link to="/previous-littersList">{t('views.pLitters')}</Link></li>
+                                <li><Link to="/testimonials">    {t('views.testimonials')}</Link></li>
+                                <li><Link to="/files">           {t('views.wallpapers')}</Link></li>
+                                <li><Link to="/contacts">        {t('views.contacts')}</Link></li>
                             </ul>
                         </div>
                         <div className="col-lg-1 menusocial">

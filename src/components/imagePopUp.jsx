@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Lightbox from 'react-image-lightbox';
 import '../styles/css/imagePopUp.css';
 import PropTypes from "prop-types";
-import OurCatCard from "./ourCatCard";
+import OurCatCard from "./pages/ourCatsPage/ourCatCard";
 
 const images = [
     require('.././contentData/ourCats/boys/perseus/perseus2.JPG')

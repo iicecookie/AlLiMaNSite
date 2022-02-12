@@ -3,8 +3,9 @@ import './styles/css/style.css';
 import './styles/css/bootstrap.css';
 import './styles/css/styles.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import KittensForSalePage from "./components/pages/kittensForSalePage";
-import OurCatsPage from "./components/pages/ourCatsPage";
+import KittensForSalePage from "./components/pages/kittensForSalePage/kittensForSalePage";
+import OurCatsPage from "./components/pages/ourCatsPage/ourCatsPage";
+import LittersPage from "./components/pages/littersPage/littersPage";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 
                 <Route path="/kittens" element={<KittensForSalePage/>}/>
                 <Route path="/our-cats" element={<OurCatsPage/>}/>
+                <Route path="/previous-littersList" element={<LittersPage/>}/>
 
                 <Route path="/*" element={<KittensForSalePage/>}/>
             </Routes>

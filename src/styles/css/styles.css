@@ -1949,3 +1949,7 @@ blockquote p > cite {
     border: none;
 
 }
+
+.no-padding {
+    padding: 0;
+}
