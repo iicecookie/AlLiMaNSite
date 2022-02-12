@@ -2,26 +2,33 @@ import i18n from 'i18next'
 import Backend from 'i18next-http-backend'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
+import translationEN from "./languages/en/translation.json";
+import translationRU from "./languages/ru/translation.json";
+
+const resources = {
+    ru: {
+        translation: translationRU
+    },
+    en: {
+        translation: translationEN
+    },
+};
 
 i18n
-    // Подключение бэкенда i18next
     .use(Backend)
-    // Автоматическое определение языка
     .use(LanguageDetector)
-    // модуль инициализации
     .use (initReactI18next)
     .init({
-        // Стандартный язык
+        resources,
         fallbackLng: 'en',
-        debug: false,
-
-        react: {
-            useSuspense: false
-        },
         // Распознавание и кэширование языковых кук
         detection: {
             order: ['queryString', 'cookie'],
             cache: ['cookie']
+        },
+        whitelist: ["ru", "en"],
+        react: {
+            useSuspense: false
         },
         interpolation: {
             escapeValue: false

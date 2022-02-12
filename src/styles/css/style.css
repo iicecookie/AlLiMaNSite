@@ -383,8 +383,8 @@ body > .bs_show_block.block_defer_form {
 /* blocks */
 .block {
     background-color: #FFF;
-    padding: 13px 21px;
-    margin: 20px 0;    
+    padding: 1px 1px;
+    margin: 0px 0;
 }
 
 .block h3, .block .block_header {

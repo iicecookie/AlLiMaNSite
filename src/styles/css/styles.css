@@ -956,7 +956,7 @@ body.offcanvas {overflow: hidden}
 .litter_list__item-available {display:block; font-size: 16px; text-transform: uppercase; letter-spacing: .05em; margin-top: 15px; color: #000; transition: 0.3s;}
 .litter_list__item-available:hover {color: #ccc;}
 
-.litter_list__item .btn {display: inline-block; width: auto !important; max-width: 100px; text-align: center; margin-top: 15px;}
+.litter_list__item .btn {display: inline-block; width: auto !important; max-width: 100px; text-align: center; margin-top: 0px;}
 
 
 
@@ -1457,6 +1457,7 @@ blockquote p > cite {
     border: none;
 
 }
+
 .btn.btn-sm {
     padding: 10px 20px !important;
 }
@@ -1924,4 +1925,27 @@ blockquote p > cite {
 
 .flag-space {
     padding-left: 0px;
+}
+
+
+.btn-ourCats {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 400 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    background: #eff8fd;
+    color: #373333;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-shadow: none !important;
+    border: none;
+
 }

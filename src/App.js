@@ -11,8 +11,12 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={<KittensForSalePage/>}/>
+
                 <Route path="/kittens" element={<KittensForSalePage/>}/>
                 <Route path="/our-cats" element={<OurCatsPage/>}/>
+
+                <Route path="/*" element={<KittensForSalePage/>}/>
             </Routes>
         </BrowserRouter>
     );

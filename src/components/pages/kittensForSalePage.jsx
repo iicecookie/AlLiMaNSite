@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from "../header";
-import KittenList from "../kittenList";
-import Footer from "../footer";
+import Header from "../static/header";
+import KittensList from "../kittensList";
+import Footer from "../static/footer";
 
 const KittensForSalePage = () => {
     return (
         <div id='page' className="header_stick_wrap">
             <Header/>
 
-            <KittenList/>
+            <KittensList/>
 
             <Footer/>
         </div>

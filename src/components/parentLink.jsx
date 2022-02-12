@@ -1,7 +1,7 @@
 import React from 'react';
 import {useTranslation} from "react-i18next";
 import PropTypes from "prop-types";
-import Kitten from "./kitten";
+import KittenCard from "./kittenCard";
 
 const ParentLink = (props) => {
 
