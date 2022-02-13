@@ -1,6 +1,6 @@
 import React from 'react';
 import LitterCard from "./litterCard";
-import {littersList} from "../../../contentData/littersData/LittersList";
+import {littersList} from "../../../contentData/LittersData/LittersList";
 
 const LitterList = () => {
 
