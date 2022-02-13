@@ -1002,11 +1002,8 @@ body.offcanvas {overflow: hidden}
 
 .avlitter__name_wrap .avlitter__name h3 {font-size: 18px;}
 
-
-
-
 .prevnext .prev a, .prevnext .next a{position: absolute;
-    top: 49%;  font-size: 18px; border-radius: 50%;
+    top: 54%;  font-size: 1px; border-radius: 50%;
     border: 2px solid #f4f4f4; width: 40px; height: 40px; line-height: 40px; text-align: center; color: #a3a4a8; transition: 0.3s}
 .prevnext .prev a:hover, .prevnext .next a:hover {border: 2px solid #a3a4a8; color: #02344a;}
 .prevnext .prev a{left: 50px; }

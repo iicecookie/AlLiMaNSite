@@ -12,6 +12,7 @@ const OurCatCard = (props) => {
     const {t, i18next} = useTranslation();
 
     function isLastBlock() {
+        if (props.catCount === 1) return true;
         return props.cat.id === props.catCount;
     }
 
