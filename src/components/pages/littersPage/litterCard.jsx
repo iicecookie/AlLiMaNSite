@@ -17,10 +17,6 @@ const LitterCard = (props) => {
         </div>
     }
 
-    function GetLitterCatsCount() {
-        return props.litter.kittens.length;
-    }
-
     function GetLitterMainPhoto() {
         return require(`/src/contentData/LittersData/litters/litter-${props.litter.code}/mainPhoto.jpg`);
     }
@@ -32,7 +28,7 @@ const LitterCard = (props) => {
 
                         <div className="litter_list__headername">
                             <h2>
-                                <Link to="/kittens/litter-v2">{t('litter')} {props.litter.code} </Link>
+                                <Link to={'/litters/' + props.litter.code}>{t('litter')} {props.litter.code} </Link>
                             </h2>
                         </div>
 
@@ -59,7 +55,7 @@ const LitterCard = (props) => {
                      style={{
                          backgroundImage: `url(${GetLitterMainPhoto()})`
                      }}>
-                    <Link to="/kittens/litter-v2" className="previous_list__link"></Link>
+                    <Link to={'/litters/' + props.litter.code} className="previous_list__link"></Link>
                 </div>
         </div>
     );

@@ -2,6 +2,7 @@
   "title": "AL.LI.MAN BRITISH AND SCOTTISH",
   "cattery": " CATTERY",
   "litter": "Litter",
+  "notOurCat": "This cat is not from our cattery",
   "gender": {
     "male": "M",
     "female": "F",

@@ -6,7 +6,6 @@ import {Link} from "react-router-dom";
 import ImagePopUp from '../../imagePopUp';
 import PropTypes from "prop-types";
 import {useTranslation} from 'react-i18next';
-import i18next from "i18next";
 
 const OurCatCard = (props) => {
 
@@ -20,8 +19,8 @@ const OurCatCard = (props) => {
         let images = [];
         for (let i = 0; i < 5; i++) {
             images[i] = {
-                original: require(`/src/contentData/ourCats/${props.cat.gender === 0 ? "girls" : "boys"}/${props.cat.name.toLowerCase()}/${props.cat.name.toLowerCase()}${i + 1}.JPG`),
-                thumbnail: require(`/src/contentData/ourCats/${props.cat.gender === 0 ? "girls" : "boys"}/${props.cat.name.toLowerCase()}/${props.cat.name.toLowerCase()}${i + 1}.JPG`),
+                original: require(`/src/contentData/ourCats/${props.cat.gender === 0 ? "girls" : "boys"}/${props.cat.name.toLowerCase()}/${props.cat.name.toLowerCase()}${i + 1}.jpg`),
+                thumbnail: require(`/src/contentData/ourCats/${props.cat.gender === 0 ? "girls" : "boys"}/${props.cat.name.toLowerCase()}/${props.cat.name.toLowerCase()}${i + 1}.jpg`),
             };
         }
         return images;
@@ -87,7 +86,7 @@ const OurCatCard = (props) => {
 
 OurCatCard.propTypes = {
     cat: PropTypes.object.isRequired,
-    catCount: PropTypes.number.isRequired,
+    catCount: PropTypes.number,
 };
 
 export default OurCatCard;

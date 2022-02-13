@@ -11,7 +11,7 @@ const LitterList = () => {
                     <section className="litter_list">
                         <div className="row no-gutters d-flex align-items-stretch">
                             {littersList.map(litter =>
-                                <LitterCard key={litter.id}
+                                <LitterCard key={litter.litterId}
                                             litter={litter}/>
                             )}
                         </div>

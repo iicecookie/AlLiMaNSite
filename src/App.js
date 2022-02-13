@@ -1,11 +1,12 @@
-import React, {Component, useState} from 'react';
+import React from 'react';
 import './styles/css/style.css';
 import './styles/css/bootstrap.css';
 import './styles/css/styles.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import KittensForSalePage from "./components/pages/kittensForSalePage/kittensForSalePage";
+import KittensForSalePage from "./components/pages/kittensPage/kittensForSalePage";
 import OurCatsPage from "./components/pages/ourCatsPage/ourCatsPage";
 import LittersPage from "./components/pages/littersPage/littersPage";
+import OneCatPage from "./components/pages/ourCatsPage/oneCatPage";
 
 function App() {
 
@@ -15,8 +16,12 @@ function App() {
                 <Route path="/" element={<KittensForSalePage/>}/>
 
                 <Route path="/kittens" element={<KittensForSalePage/>}/>
+
                 <Route path="/our-cats" element={<OurCatsPage/>}/>
-                <Route path="/previous-littersList" element={<LittersPage/>}/>
+                <Route path="/our-cats/:Name" element={<OneCatPage/>}/>
+
+                <Route path="/litters" element={<LittersPage/>}/>
+                <Route path="/litters/:id" element={<KittensForSalePage/>} />
 
                 <Route path="/*" element={<KittensForSalePage/>}/>
             </Routes>

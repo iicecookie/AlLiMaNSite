@@ -10,13 +10,13 @@ const ParentLink = (props) => {
         <div className="rod_wrap">
             <div className="lh">
                 <span className="lhf">{t("gender.male")}</span>
-                <Link to='our-cats/gentlemen/'>
+                <Link to={'/our-cats/' + props.litter.fatherName}>
                     {props.litter.fatherName} {props.litter.fatherCattery}
                 </Link>
             </div>
             <div className="lh">
                 <span className="lhf">{t("gender.female")}</span>
-                <Link to='our-cats/ladies/'>
+                <Link to={'/our-cats/' + props.litter.motherName}>
                     {props.litter.motherName} {props.litter.motherCattery}
                 </Link>
             </div>

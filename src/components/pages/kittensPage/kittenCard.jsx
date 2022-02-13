@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import {useTranslation} from 'react-i18next';
 import ParentLink from "../../parentLink";
 import i18next from "i18next";
+import {Link} from "react-router-dom";
 
 const KittenCard = (props) => {
 
@@ -69,7 +70,9 @@ const KittenCard = (props) => {
         <div className="litter_list__header">
 
             <div className="litter_list__headername">
-                <h2><a href="kittens/litter-w88.html">{t("litter")} {props.litter.code}</a></h2>
+                <h2>
+                    <Link to={"/litters/" + props.litter.code}>{t("litter")} {props.litter.code}</Link>
+                </h2>
             </div>
             <div className="ld">{props.litter.birthDate}</div>
 
@@ -89,11 +92,7 @@ const KittenCard = (props) => {
 KittenCard.propTypes = {
     kitten: PropTypes.object.isRequired,
     kittenCount: PropTypes.number.isRequired,
-
-    litter: PropTypes.string.isRequired,
-    gender: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    cattery: PropTypes.string.isRequired,
+    litter: PropTypes.object.isRequired,
 };
 
 export default KittenCard;

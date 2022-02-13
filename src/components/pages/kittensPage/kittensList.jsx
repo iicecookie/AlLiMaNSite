@@ -1,20 +1,33 @@
 import React from 'react';
 import KittenCard from './kittenCard';
 import {littersList} from "../../../contentData/LittersData/LittersList";
+import PropTypes from "prop-types";
 
 const KittensList = (props) => {
 
-    let kittensForSale = [];
+    let kittensList = [];
 
-    function GetKittensForSale() {
-        littersList.forEach(litter => {
-            litter.kittens.forEach(kitten => {
-                if (kitten.status === 'sale') {
-                    kittensForSale.push(kitten);
+    function GetKittensList() {
+        if (props.litterCode) {
+            littersList.forEach(litter => {
+                if (litter.code === props.litterCode) {
+                    litter.kittens.forEach(kitten => {
+                        kittensList.push(kitten);
+                    })
                 }
             })
-        })
-        return kittensForSale;
+        } else {
+            littersList.forEach(litter => {
+                litter.kittens.forEach(kitten => {
+                    if (kitten.status === 'sale') {
+                        kittensList.push(kitten);
+                    }
+                })
+            })
+        }
+
+        console.log(kittensList);
+        return kittensList;
     }
 
     function GetLitter(kitten) {
@@ -27,10 +40,10 @@ const KittensList = (props) => {
                 <section className="litter_list">
                     <div className="container-fluid">
                         <section className="litter_list litter_m0">
-                            {GetKittensForSale().map(kitten =>
+                            {GetKittensList().map(kitten =>
                                 <KittenCard key={kitten.id}
                                             kitten={kitten}
-                                            kittenCount={kittensForSale.length}
+                                            kittenCount={kittensList.length}
                                             litter={GetLitter(kitten)}/>
                             )}
                         </section>
@@ -39,6 +52,10 @@ const KittensList = (props) => {
             </main>
         </div>
     );
+};
+
+KittensList.propTypes = {
+    litterCode: PropTypes.string,
 };
 
 export default KittensList;

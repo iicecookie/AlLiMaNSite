@@ -5,21 +5,21 @@ export const littersList = [
         fatherName: 'Fth', fatherCattery: 'Al.Li.MaN',
         kittens: [
             {
-                name: 'elfie', id: 1, litterId: 5, gender: 0, status: 'sale',
+                name: 'elfie', id: 10, litterId: 5, gender: 0, status: 'sale',
                 description: {
                     en: "",
                     ru: ""
                 }
             },
             {
-                name: 'eva', id: 2, litterId: 5, gender: 0, status: 'sale',
+                name: 'eva', id: 9, litterId: 5, gender: 0, status: 'sale',
                 description: {
                     en: "",
                     ru: ""
                 }
             },
             {
-                name: 'elfie', id: 3, litterId: 5, gender: 0, status: 'sold',
+                name: 'elfie', id: 8, litterId: 5, gender: 0, status: 'sold',
                 description: {
                     en: "",
                     ru: ""
@@ -59,21 +59,21 @@ export const littersList = [
         fatherName: 'Rock and Roll', fatherCattery: '',
         kittens: [
             {
-                name: 'adely', id: 1, litterId: 1, gender: 0, status: 'sale',
+                name: 'adely', id: 3, litterId: 1, gender: 0, status: 'sale',
                 description: {
                     en: "Girl, Scottish longhair, color golden shaded ny 11",
                     ru: "Девочка, шотландская длинношерстная, окоас золотая затушеванная ny 11"
                 }
             },
             {
-                name: 'alisa', id: 2, litterId: 1, gender: 0, status: 'sale',
+                name: 'alisa', id: 2, litterId: 1, gender: 0, status: 'sold',
                 description: {
                     en: "Girl, Scottish Shorthair. Color golden veiled ny12",
                     ru: "Девочка, шотландская короткошерстная. Окрас золотая завуалированная ny12"
                 }
             },
             {
-                name: 'aleks', id: 3, litterId: 1, gender: 1, status: 'sale',
+                name: 'aleks', id: 1, litterId: 1, gender: 1, status: 'sold',
                 description: {
                     en: "Boy, Scottish Shorthair. Color golden shaded ny 11",
                     ru: "Мальчик, шотландский короткошерстный. Окрас золотой затушеванный ny 11"
