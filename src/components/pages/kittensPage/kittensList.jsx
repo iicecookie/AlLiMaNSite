@@ -1,6 +1,6 @@
 import React from 'react';
 import KittenCard from './kittenCard';
-import {littersList} from "../../../contentData/LittersData/LittersList";
+import {littersList} from "../../../contentData/littersData/LittersList";
 import PropTypes from "prop-types";
 
 const KittensList = (props) => {
