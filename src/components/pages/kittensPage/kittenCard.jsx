@@ -16,8 +16,8 @@ const KittenCard = (props) => {
         let images = [];
         for (let i = 0; i < 5; i++) {
             images[i] = {
-                original: require(`/src/contentData/LittersData/litters/litter-${props.litter.code}/${props.kitten.name}/${props.kitten.name}${i + 1}.jpg`),
-                thumbnail: require(`/src/contentData/LittersData/litters/litter-${props.litter.code}/${props.kitten.name}/${props.kitten.name}${i + 1}.jpg`),
+                original: require(`/src/contentData/littersData/litters/litter-${props.litter.code}/${props.kitten.name}/${props.kitten.name}${i + 1}.jpg`),
+                thumbnail: require(`/src/contentData/littersData/litters/litter-${props.litter.code}/${props.kitten.name}/${props.kitten.name}${i + 1}.jpg`),
             };
         }
         console.log(props.kittenCount);
@@ -40,14 +40,13 @@ const KittenCard = (props) => {
 
     function GetKittenDescription() {
         return <div className="col-md-4 litter_list__itemleft">
-            <a href="kittens/winnie.html" className="litter_list__item-name">
+            <Link to="/kittens/" className="litter_list__item-name">
                 {props.kitten.name}
-            </a>
+            </Link>
             <div className="litter_list__item-desc">
-                <p>{props.kitten.description[i18next.language == 'en' ? 'en' : 'ru']}</p>
-                <p></p>
+                <p>{props.kitten.description[i18next.language === 'en' ? 'en' : 'ru']}</p>
+
             </div>
-            <div className="d-block"></div>
         </div>
     }
 

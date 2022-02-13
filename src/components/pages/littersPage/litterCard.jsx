@@ -18,7 +18,7 @@ const LitterCard = (props) => {
     }
 
     function GetLitterMainPhoto() {
-        return require(`/src/contentData/LittersData/litters/litter-${props.litter.code}/mainPhoto.jpg`);
+        return require(`/src/contentData/littersData/litters/litter-${props.litter.code}/litterView.jpg`);
     }
 
     return (
@@ -55,7 +55,7 @@ const LitterCard = (props) => {
                      style={{
                          backgroundImage: `url(${GetLitterMainPhoto()})`
                      }}>
-                    <Link to={'/litters/' + props.litter.code} className="previous_list__link"></Link>
+                    <Link to={'/litters/' + props.litter.code} className="previous_list__link"/>
                 </div>
         </div>
     );
