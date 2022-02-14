@@ -8,6 +8,8 @@
     "female": "F",
     "maleKitten": "boy",
     "femaleKitten": "girl",
+    "maleCat": "MALE",
+    "femaleCat": "FEMALE",
     "gentelmens": "gentlemens",
     "ladies": "ladies"
   },

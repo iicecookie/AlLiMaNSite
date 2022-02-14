@@ -41,8 +41,9 @@ const OneCatPage = () => {
     }
 
     function GetPrevCat() {
+
         let indexOfPrevCat = ourCats.indexOf(GetCat()) - 1;
-        if (indexOfPrevCat === -1) {
+        if (indexOfPrevCat <= -1) {
             indexOfPrevCat = ourCats.length - 1;
         }
         return ourCats[indexOfPrevCat];
@@ -58,7 +59,7 @@ const OneCatPage = () => {
 
             <div className="prevnext">
                 <div className="prev">
-                    <Link to={"/our-cats/" + GetPrevCat().name} title={GetPrevCat().name + " " + GetPrevCat().cattery}>
+                    <Link to={"/our-cats/" + GetPrevCat()?.name} title={GetPrevCat()?.name + " " + GetPrevCat()?.cattery}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
                              className="bi ti-arrow-left" viewBox="0 0 16 16">
                             <path fillRule="evenodd"
@@ -68,7 +69,7 @@ const OneCatPage = () => {
                 </div>
 
                 <div className="next">
-                    <Link to={"/our-cats/" + GetNextCat().name} title={GetNextCat().name + " " + GetNextCat().cattery}>
+                    <Link to={"/our-cats/" + GetNextCat()?.name} title={GetNextCat()?.name + " " + GetNextCat()?.cattery}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor"
                              className="bi ti-arrow-right" viewBox="0 0 16 16">
                             <path fillRule="evenodd"

@@ -6,10 +6,11 @@ import {Link} from "react-router-dom";
 import ImagePopUp from '../../imagePopUp';
 import PropTypes from "prop-types";
 import {useTranslation} from 'react-i18next';
+import i18next from "i18next";
 
 const OurCatCard = (props) => {
 
-    const {t, i18next} = useTranslation();
+    const {t} = useTranslation();
 
     function isLastBlock() {
         if (props.catCount === 1) return true;
@@ -52,14 +53,13 @@ const OurCatCard = (props) => {
 
                     <div className="family_id_date_wrap">
                         <span className="family_id_date">{props.cat.birthDate}</span>
+                        <span className="family_id_date"> {props.cat.gender === 1 ? t("gender.maleCat") : t("gender.femaleCat")}</span>
                     </div>
 
                     <div className="litter_list__item-desc">
                         <p>
                             <span>
-                                George is British Shorthair /Blue Silver Shaded Point /BRI as 11 33 /male (born 06.26.2020). George was born in our cattery (litter G2).&nbsp;
-                                <a> {"\n"}{"\n"} </a>  Father is our gorgeous QGC Apollo Peace Coon. Mother is our beautiful lady Matilda Natalyland of LorettaBritish.
-                                {"\n"} George is&nbsp; very big and strong boy with plush white fur and gorgeous blue eyes. He is cute, funny and very friedly.
+                                {props.cat.description[i18next.language === 'en' ? 'en' : 'ru']}
                             </span>
                         </p>
                     </div>
