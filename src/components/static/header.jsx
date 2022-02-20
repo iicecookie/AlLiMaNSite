@@ -45,8 +45,8 @@ function Header() {
                     <div className="row no-gutters header_in ">
                         <div className="col-auto">
                             <div className="logo">
-                                <Link to="/index"> <img src={logo} alt="title"/></Link>
-                                <div><Link to="/index">{t("title")} <span>{t("cattery")}</span></Link></div>
+                                <Link to="/home"> <img src={logo} alt="title"/></Link>
+                                <div><Link to="/home">{t("title")} <span>{t("cattery")}</span></Link></div>
                             </div>
                         </div>
                         <div className="col-auto ">
