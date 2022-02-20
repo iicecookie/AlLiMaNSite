@@ -6,11 +6,10 @@ import instagram from '../../styles/icons/instagram.png';
 import facebook from '../../styles/icons/facebook.png';
 import whatsapp from '../../styles/icons/whatsapp.png';
 import {
-    facebookAdress, instagramAdress, whatsappAdress,
-    mainTelephone, mainTelephoneLink, contactMail, contactMailLink,
+    facebookAdress, instagramAdress, whatsappAdress
 } from '../../contentData/Contacts.js';
 
-import {useTranslation, withTranslation} from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import {Link} from "react-router-dom";
 
 
@@ -20,9 +19,9 @@ function Header() {
 
     const listenScrollEvent = event => {
         if (window.scrollY > 200) {
-            return setHeader("nav sticker_in stick");
+            return setHeader("nav sticker_in stick ");
         } else {
-            return setHeader("stick");
+            return setHeader("stick ");
         }
     };
 
