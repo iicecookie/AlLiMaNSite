@@ -8,25 +8,28 @@ import OurCatsPage from "./components/pages/ourCatsPage/ourCatsPage";
 import LittersPage from "./components/pages/littersPage/littersPage";
 import OneCatPage from "./components/pages/ourCatsPage/oneCatPage";
 import Home from "./components/pages/home/home";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
 
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/home" element={<Home/>}/>
+            <ScrollToTop>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/home" element={<Home/>}/>
 
-                <Route path="/kittens" element={<KittensForSalePage/>}/>
+                    <Route path="/kittens" element={<KittensForSalePage/>}/>
 
-                <Route path="/our-cats" element={<OurCatsPage/>}/>
-                <Route path="/our-cats/:Name" element={<OneCatPage/>}/>
+                    <Route path="/our-cats" element={<OurCatsPage/>}/>
+                    <Route path="/our-cats/:Name" element={<OneCatPage/>}/>
 
-                <Route path="/litters" element={<LittersPage/>}/>
-                <Route path="/litters/:id" element={<KittensForSalePage/>} />
+                    <Route path="/litters" element={<LittersPage/>}/>
+                    <Route path="/litters/:id" element={<KittensForSalePage/>}/>
 
-                <Route path="/*" element={<KittensForSalePage/>}/>
-            </Routes>
+                    <Route path="/*" element={<KittensForSalePage/>}/>
+                </Routes>
+            </ScrollToTop>
         </BrowserRouter>
     );
 }

@@ -25,8 +25,6 @@ const KittensList = (props) => {
                 })
             })
         }
-
-        console.log(kittensList);
         return kittensList;
     }
 

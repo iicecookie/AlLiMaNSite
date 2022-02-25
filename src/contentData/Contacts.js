@@ -1,4 +1,4 @@
-export const mainTelephone = '+7(925)561-84-06';
+export const mainTelephone = '+7(925)561-95-80';
 export const mainTelephoneLink = 'tel:+79255619580';
 
 export const contactMail = 'maximbu@mail.ru';

@@ -34,7 +34,7 @@ const OurCatCard = (props) => {
                 <div className="thumbs_fixed">
                     <ImageGallery items={getImages()}
                                   infinite={true}
-                                  thumbnailPosition={'left'}
+                                  thumbnailPosition={'right'}
                                   slideOnThumbnailOver={true}
                                   showBullets={true}
                                   slideInterval={1700}/>
@@ -53,7 +53,8 @@ const OurCatCard = (props) => {
 
                     <div className="family_id_date_wrap">
                         <span className="family_id_date">{props.cat.birthDate}</span>
-                        <span className="family_id_date"> {props.cat.gender === 1 ? t("gender.maleCat") : t("gender.femaleCat")}</span>
+                        <span
+                            className="family_id_date"> {props.cat.gender === 1 ? t("gender.maleCat") : t("gender.femaleCat")}</span>
                     </div>
 
                     <div className="litter_list__item-desc">
@@ -77,10 +78,7 @@ const OurCatCard = (props) => {
                 </div>
 
                 {GetPhotoFrame()}
-
             </div>
-
-            <hr style={{visibility: isLastBlock() ? 'hidden' : 'visible'}}/>
         </div>
     );
 };

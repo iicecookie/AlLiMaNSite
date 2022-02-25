@@ -8,7 +8,6 @@ import whatsapp from "../../../styles/icons/whatsapp.png";
 
 function HomeHeader() {
 
-    const [header, setHeader] = useState("header");
     const [nav, setNav] = useState("nav");
 
     const listenScrollEvent = event => {

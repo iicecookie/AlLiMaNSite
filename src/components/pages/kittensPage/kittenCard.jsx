@@ -20,7 +20,6 @@ const KittenCard = (props) => {
                 thumbnail: require(`/src/contentData/littersData/litters/litter-${props.litter.code}/${props.kitten.name}/${props.kitten.name}${i + 1}.jpg`),
             };
         }
-        console.log(props.kittenCount);
         return images;
     }
 
@@ -56,7 +55,7 @@ const KittenCard = (props) => {
                 <div className="thumbs_fixed">
                     <ImageGallery items={getImages()}
                                   infinite={true}
-                                  thumbnailPosition={'left'}
+                                  thumbnailPosition={'right'}
                                   slideOnThumbnailOver={true}
                                   showBullets={true}
                                   slideInterval={1700}/>

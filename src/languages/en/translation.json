@@ -16,10 +16,15 @@
   "views": {
     "ourCats": "Our cats",
     "kittens": "Kittens",
+    "kittensForSale": "AVAILABLE KITTENS",
     "pLitters": "Previous litters",
     "testimonials": "Testimonials",
     "wallpapers": "Wallpapers",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "contactUs": "CONTACT US"
+  },
+  "socialMedia": {
+    "followUs": "Follow us on social media"
   },
   "footerDescription": "Our beautiful kittens and cats will be great companions to you and will love you forever. We are always happy to assist you in your choice.",
   "unions": {
