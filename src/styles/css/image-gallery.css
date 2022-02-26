@@ -82,7 +82,7 @@
   opacity: 0.6;
   pointer-events: none;
 }
-.image-gallery-left-nav {
+.image-gallery-image-gallery-slide-wrapper.left-nav {
   left: 0;
 }
 .image-gallery-right-nav {
@@ -143,8 +143,13 @@
   width: calc(100% - 110px);
 }
 @media (max-width: 768px) {
-  .image-gallery-slide-wrapper.left, .image-gallery-slide-wrapper.right {
+   .image-gallery-slide-wrapper.right {
     width: calc(100% - 87px);
+  }
+}
+@media (max-width: 768px) {
+  .image-gallery-slide-wrapper.left {
+    width: 100%;
   }
 }
 /*-----------------------------*/
