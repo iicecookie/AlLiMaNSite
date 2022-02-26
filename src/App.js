@@ -9,6 +9,7 @@ import LittersPage from "./components/pages/littersPage/littersPage";
 import OneCatPage from "./components/pages/ourCatsPage/oneCatPage";
 import Home from "./components/pages/home/home";
 import ScrollToTop from "./components/scrollToTop";
+import ContactUsPage from "./components/pages/contactUsPage/contactUsPage";
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
 
                     <Route path="/litters" element={<LittersPage/>}/>
                     <Route path="/litters/:id" element={<KittensForSalePage/>}/>
+
+                    <Route path="/contacts" element={<ContactUsPage/>}/>
 
                     <Route path="/*" element={<KittensForSalePage/>}/>
                 </Routes>

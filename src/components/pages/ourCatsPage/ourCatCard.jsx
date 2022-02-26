@@ -12,11 +12,6 @@ const OurCatCard = (props) => {
 
     const {t} = useTranslation();
 
-    function isLastBlock() {
-        if (props.catCount === 1) return true;
-        return props.cat.id === props.catCount;
-    }
-
     function getImages() {
         let images = [];
         for (let i = 0; i < 5; i++) {

@@ -4,7 +4,7 @@ import {useNavigate} from "react-router-dom";
 import {ourCats} from "../../../contentData/ourCats/OurCats";
 import * as PropTypes from "prop-types";
 
-const OurCatsGallery = (callback, deps) => {
+const OurCatsGallery = () => {
 
     function getImages() {
         let images = [];

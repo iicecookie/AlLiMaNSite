@@ -1,14 +1,12 @@
 import React from 'react';
-import logo from '../../styles/icons/logo.png';
-import instagram from '../../styles/icons/instagram.png';
-import facebook from '../../styles/icons/facebook.png';
-import whatsapp from '../../styles/icons/whatsapp.png';
 import {
-    facebookAdress, instagramAdress, whatsappAdress,
-    mainTelephone, mainTelephoneLink, contactMail, contactMailLink
-} from '../../contentData/Contacts.js';
+    facebookLink, instagramLink, whatsappLink,
+    mainTelephone, mainTelephoneLink, contactMail, contactMailLink, telegramGroupLink
+} from '../../contentData/Links.js';
+import {logo, facebookIcon, instagramIcon, whatsappIcon, telegramIcon} from "../../contentData/Icons";
 
 import {useTranslation} from 'react-i18next';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     const {t} = useTranslation();
@@ -28,42 +26,35 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-6 ">
                                 <ul>
-                                    <li><a href="our-cats.html">{t('views.ourCats')}</a></li>
-                                    <li><a href="kittens.html">{t('views.kittens')}</a></li>
-                                    <li><a href="previous-litters.html">{t('views.pLitters')}</a></li>
-                                    <li><a href="testimonials.html">{t('views.testimonials')}</a></li>
-                                    <li><a href="files.html">{t('views.wallpapers')}</a></li>
-                                    <li><a href="contacts.html">{t('views.contacts')}</a></li>
+                                    <li><Link to="/our-cats">{t('views.ourCats')}</Link></li>
+                                    <li><Link to="/kittens">{t('views.kittens')}</Link></li>
+                                    <li><Link to="/litters">{t('views.pLitters')}</Link></li>
+                                    <li><Link to="/testimonials">{t('views.testimonials')}</Link></li>
+                                    <li><Link to="/files">{t('views.wallpapers')}</Link></li>
+                                    <li><Link to="/contacts">{t('views.contacts')}</Link></li>
                                 </ul>
                             </div>
                             <div className="col-6">
                                 <ul>
-                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><Link to="/faq">FAQ</Link></li>
                                     <li><a href={mainTelephoneLink}>{mainTelephone}</a></li>
                                     <li><a href={contactMailLink}>{contactMail}</a></li>
                                     <li className="footer__social">
-                                        <a href={instagramAdress}>
-                                            <img className="icon icon-instagram" src={instagram} alt="title"/></a>
-                                        <a href={facebookAdress}>
-                                            <img className="icon icon-facebook" src={facebook} alt="title"/></a>
-                                        <a href={whatsappAdress}>
-                                            <img className="icon icon-whatsapp" src={whatsapp} alt="title"/></a>
+                                        <a href={instagramLink}>
+                                            <img className="icon icon-instagram" src={instagramIcon} alt="title"/></a>
+                                        <a href={facebookLink}>
+                                            <img className="icon icon-facebook" src={facebookIcon} alt="title"/></a>
+                                        <a href={telegramGroupLink}>
+                                            <img className="icon icon-whatsapp" src={telegramIcon} alt="title"/></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div className="col-md-5">
-                        <div className="subs">
-                            <p>{t('footerDescription')}</p>
-                            <form method="POST" encType="multipart/form-data"
-                                  action="#" className="form-inline ajax">
-                            </form>
-                        </div>
+                    <div className="col-md-5 subs">
+                        <p>{t('footerDescription')}. Сделать, что бы у каждого кота и кошки были ссылки на их детей?</p>
                     </div>
-
-
                 </div>
             </footer>
         </div>

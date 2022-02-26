@@ -1,13 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
 import '../../styles/fonts/font.css';
-import logo from '../../styles/icons/logo.png';
-import instagram from '../../styles/icons/instagram.png';
-import facebook from '../../styles/icons/facebook.png';
-import whatsapp from '../../styles/icons/whatsapp.png';
 import {
-    facebookAdress, instagramAdress, whatsappAdress
-} from '../../contentData/Contacts.js';
+    facebookLink, instagramLink, telegramGroupLink, whatsappLink
+} from '../../contentData/Links.js';
+import {facebookIcon, instagramIcon, logo, telegramIcon, whatsappIcon} from "../../contentData/Icons";
 
 import {useTranslation} from 'react-i18next';
 import {Link} from "react-router-dom";
@@ -59,12 +56,12 @@ function Header() {
                             </ul>
                         </div>
                         <div className="col-lg-1 menusocial">
-                            <a href={instagramAdress}>
-                                <img className="icon icon-instagram" src={instagram} alt="title"/></a>
-                            <a href={facebookAdress}>
-                                <img className="icon icon-facebook" src={facebook} alt="title"/></a>
-                            <a href={whatsappAdress}>
-                                <img className="icon icon-whatsapp" src={whatsapp} alt="title"/></a>
+                            <a href={instagramLink}>
+                                <img className="icon icon-instagram" src={instagramIcon} alt="title"/></a>
+                            <a href={facebookLink}>
+                                <img className="icon icon-facebook" src={facebookIcon} alt="title"/></a>
+                            <a href={telegramGroupLink}>
+                                <img className="icon icon-whatsapp" src={telegramIcon} alt="title"/></a>
                         </div>
 
                         <div className="col-auto menusocial">

@@ -1,8 +1,7 @@
-import React, {useCallback} from 'react';
+import React from 'react';
 import ImageGallery from "react-image-gallery";
 import {littersList} from "../../../contentData/littersData/LittersList";
 import {Link} from "react-router-dom";
-import KittenCard from "../kittensPage/kittenCard";
 import i18next, {t} from "i18next";
 import ParentLink from "../../parentLink";
 

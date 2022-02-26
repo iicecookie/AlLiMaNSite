@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {useTranslation} from 'react-i18next';
 import {Link} from "react-router-dom";
-import {facebookAdress, instagramAdress, whatsappAdress} from "../../../contentData/Contacts";
-import instagram from "../../../styles/icons/instagram.png";
-import facebook from "../../../styles/icons/facebook.png";
-import whatsapp from "../../../styles/icons/whatsapp.png";
+import {facebookLink, instagramLink, telegramGroupLink, whatsappLink} from "../../../contentData/Links";
+import {facebookIcon, instagramIcon, telegramIcon, whatsappIcon} from "../../../contentData/Icons";
 
 function HomeHeader() {
 
@@ -56,12 +54,12 @@ function HomeHeader() {
                         </div>
 
                         <div className="col-lg-1 menusocial">
-                            <a href={instagramAdress}>
-                                <img className="icon icon-instagram" src={instagram} alt="title"/></a>
-                            <a href={facebookAdress}>
-                                <img className="icon icon-facebook" src={facebook} alt="title"/></a>
-                            <a href={whatsappAdress}>
-                                <img className="icon icon-whatsapp" src={whatsapp} alt="title"/></a>
+                            <a href={instagramLink}>
+                                <img className="icon icon-instagram" src={instagramIcon} alt="title"/></a>
+                            <a href={facebookLink}>
+                                <img className="icon icon-facebook" src={facebookIcon} alt="title"/></a>
+                            <a href={telegramGroupLink}>
+                                <img className="icon icon-whatsapp" src={telegramIcon} alt="title"/></a>
                         </div>
 
                         <div className="col-auto menusocial">
