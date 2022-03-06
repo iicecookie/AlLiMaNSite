@@ -5,35 +5,35 @@ export const littersList = [
         fatherName: 'Fth', fatherCattery: 'Al.Li.MaN',
         kittens: [
             {
-                name: 'elfie', id: 10, litterId: 5, gender: 0, status: 'sale',
+                name: 'ervin', id: 18, litterId: 5, gender: 1, status: 'sold',
                 description: {
-                    en: "",
-                    ru: ""
+                    en: "A wonderful representative of the British breed, boy ny 25. Round bear with very beautiful green eyes",
+                    ru: "Прекрасный представитель британской породы, мальчик ny 25. Круглый мишка с очень красивыми зелеными глазками"
                 }
             },
             {
-                name: 'eva', id: 9, litterId: 5, gender: 0, status: 'sale',
+                name: 'eva', id: 17, litterId: 5, gender: 0, status: 'sale',
                 description: {
-                    en: "",
-                    ru: ""
+                    en: "A wonderful girl, with huge green eyes, a stuffed fur coat and an affectionate character. color golden ticked ny25.",
+                    ru: "Замечательная девочка, с огромными зелеными глазками, набивной шубкой и ласковым характером. окрас золотой тиккированный ny25."
                 }
             },
             {
-                name: 'elfie', id: 8, litterId: 5, gender: 0, status: 'sold',
+                name: 'elza', id: 16, litterId: 5, gender: 0, status: 'sale',
                 description: {
-                    en: "",
-                    ru: ""
+                    en: "A beautiful representative of the British breed, big green eyes, small ears, stuffed coat. Color golden ticked, female ny25",
+                    ru: "Прекрасный представитель британской породы, большие зеленые глаза, маленькие ушки, набивная шубка. Окрас золотой тиккированный, девочка ny25  "
                 }
             },
             {
-                name: 'elfie', id: 4, litterId: 5, gender: 0, status: 'sold',
+                name: 'elfie', id: 15, litterId: 5, gender: 0, status: 'sold',
                 description: {
-                    en: "",
-                    ru: ""
+                    en: "Gorgeous golden beauty with a wonderful character. Color golden ticked, ny25. Hands-on lover",
+                    ru: "Шикарная золотая красотка с замечательным характером. Окрас золотой тиккированнный, ny25. Любительница посидеть на ручках"
                 }
             },
             {
-                name: 'elfie', id: 5, litterId: 5, gender: 0, status: 'sold',
+                name: 'elfie', id: 14, litterId: 5, gender: 0, status: 'sold',
                 description: {
                     en: "",
                     ru: ""
@@ -42,8 +42,25 @@ export const littersList = [
         ]
     },
     {
-        litterId: 4, code: 'D', birthDate: '22.11.2020', motherName: 'Sonya', futherName: 'Fth',
-        kittens: []
+        litterId: 4, code: 'D', birthDate: '10.12.2021',
+        motherName: 'Sofya', motherCattery: 'Silver Muar',
+        fatherName: 'Chester', fatherCattery: 'PalMarino',
+        kittens: [
+            {
+                name: 'demi', id: 13, litterId: 4, gender: 0, status: 'sold',
+                description: {
+                    en: "Girl, Bright golden coat color ny 22, emerald eyes and a very affectionate character",
+                    ru: "Девочка, Яркая золотая шубка окраса ny 22, изумрудные глазки и очень ласковый характер"
+                }
+            },
+            {
+                name: 'dante', id: 12, litterId: 4, gender: 1, status: 'sale',
+                description: {
+                    en: "Scottish fold boy. Perfect fitting ears, large green eyes. The character is playful and at the same time affectionate. He loves pens very much, turns on the purr at the touch of a button",
+                    ru: "Шотландский вислоухий мальчик. Идеальное прилегание ушек, большие зеленые глазки. Характер игривый и в то же время ласковый. Очень любит ручки, включает мурчалку от одного прикосновения"
+                }
+            },
+        ]
     },
     {
         litterId: 3, code: 'C', birthDate: '20.05.2021',
@@ -53,31 +70,31 @@ export const littersList = [
             {
                 name: 'cesar', id: 11, litterId: 3, gender: 1, status: 'sold',
                 description: {
-                    en: " ",
-                    ru: " "
+                    en: "Male, black gold shaded, ny 11",
+                    ru: "Мальчик, окрас черный золотой затушеванный, ny 11"
                 }
             },
             {
                 name: 'carolina', id: 10, litterId: 3, gender: 0, status: 'sold',
                 description: {
-                    en: " ",
-                    ru: " "
-                }
-            },
-            {
-                name: 'charli', id: 9, litterId: 3, gender: 1, status: 'sold',
-                description: {
-                    en: " ",
-                    ru: " "
+                    en: "Girl, black gold shaded, ny 11",
+                    ru: "Девочка, окрас черная золотая затушеванная, ny 11"
                 }
             },
             {
                 name: 'charlotta', id: 8, litterId: 3, gender: 0, status: 'sold',
                 description: {
-                    en: " ",
-                    ru: " "
+                    en: "Girl. Color blue gold shaded, ay 11",
+                    ru: "Девочка. Окрас голубое золото затушеванное, ay 11"
                 }
             },
+            {
+                name: 'charli', id: 9, litterId: 3, gender: 1, status: 'sold',
+                description: {
+                    en: "Boy, color blue gold shaded, ay11",
+                    ru: "Мальчик, окрас голубое золото затушеванное, ay11"
+                }
+            }
         ]
     },
     {
@@ -88,31 +105,24 @@ export const littersList = [
             {
                 name: 'bruno', id: 7, litterId: 2, gender: 1, status: 'sold',
                 description: {
-                    en: " ",
-                    ru: " "
+                    en: "Boy, blue gold, ny 25",
+                    ru: "Мальчик, окрас голубое золото, ny 25"
                 }
             },
             {
                 name: 'bonapart', id: 6, litterId: 2, gender: 1, status: 'sold',
                 description: {
-                    en: " ",
-                    ru: "Д "
+                    en: "Мальчик, окрас черный золотой затушеванный, ny11",
+                    ru: "Boy, black golden shaded, ny11"
                 }
             },
             {
-                name: 'Bianka', id: 5, litterId: 2, gender: 0, status: 'sold',
+                name: 'bianka', id: 5, litterId: 2, gender: 0, status: 'sold',
                 description: {
-                    en: " ",
-                    ru: " "
+                    en: "Girl, color black golden ticked, ny25",
+                    ru: "Девочка, окрас черная золотая тиккированная, ny25"
                 }
-            },
-            {
-                name: 'charlie', id: 4, litterId: 2, gender: 0, status: 'sold',
-                description: {
-                    en: "",
-                    ru: ""
-                }
-            },
+            }
         ]
     },
     {
@@ -121,7 +131,7 @@ export const littersList = [
         fatherName: 'Rock and Roll', fatherCattery: '',
         kittens: [
             {
-                name: 'adely', id: 3, litterId: 1, gender: 0, status: 'sale',
+                name: 'adely', id: 3, litterId: 1, gender: 0, status: 'sold',
                 description: {
                     en: "Girl, Scottish longhair, color golden shaded ny 11",
                     ru: "Девочка, шотландская длинношерстная, окоас золотая затушеванная ny 11"

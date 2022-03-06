@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 import {useTranslation} from "react-i18next";
+import ParentLink from "../../parentLink";
 
 const LitterCard = (props) => {
 
@@ -34,6 +35,9 @@ const LitterCard = (props) => {
 
                         <div className="ld">{props.litter.birthDate}</div>
                         {GetLitterGenderCount()}
+
+                        <ParentLink litter={props.litter}/>
+                        {/*
                         <div className="rod_wrap">
                             <div className="lh"><span className="lhf">{t("gender.male")}</span>
                                 <Link to="/our-cats/gentlemen/george-peace-coon-lorettabritish">
@@ -48,6 +52,7 @@ const LitterCard = (props) => {
                                 </Link>
                             </div>
                         </div>
+                        */}
                     </div>
                 </div>
 

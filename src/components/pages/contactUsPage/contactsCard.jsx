@@ -45,7 +45,7 @@ const ContactsCard = () => {
                                 </div>
                             </div>
                             <div className="contact__social">
-                                <span>{t("socialMedia.followUs")}:</span>
+                                <span>{t("views.contactUsPage.followUs")}:</span>
                                 <a href={instagramLink}>
                                     <img className="icon icon-instagram" src={instagramIcon} alt="title"/></a>
                                 <a href={facebookLink}>
@@ -65,7 +65,7 @@ const ContactsCard = () => {
                         <h1>{t("title")} {t("cattery")}</h1>
                     </div>
                     <div className="col-md-8">
-                        {t("footerDescription")}
+                        {t("views.contactUsPage.description")}
                     </div>
                 </div>
             </section>

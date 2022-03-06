@@ -21,10 +21,11 @@
     "testimonials": "Testimonials",
     "wallpapers": "Wallpapers",
     "contacts": "Contacts",
-    "contactUs": "CONTACT US"
-  },
-  "socialMedia": {
-    "followUs": "Follow us on social media"
+    "contactUs": "CONTACT US",
+    "contactUsPage": {
+      "description": "Welcome to the wonderful world of British and Scottish cats.\nMy name is Bukanova Natalia, I am a certified felinologist and head of the AlLiMaN cattery\n\nThe AlLiMaN cattery has a homely, cozy atmosphere. Our cats live with us in the apartment and are full members of the family. Every day, both adult cats and kittens receive maximum care and attention.\nTherefore, the calling card of our cattery is cats with an exceptionally kind, affectionate character.\n\nHigh breed qualities are confirmed by international experts at licensed exhibitions, where our animals receive invariably excellent marks\n\nThanks to competent care and regular veterinary services, our animals are distinguished by good health.\n \nThe cattery is registered in the World Cat Federation (WCF)\n  \nIf you live in another city or country, a gentle delivery of a kitten is possible",
+      "followUs": "Follow us on social media"
+    }
   },
   "footerDescription": "Our beautiful kittens and cats will be great companions to you and will love you forever. We are always happy to assist you in your choice.",
   "unions": {
