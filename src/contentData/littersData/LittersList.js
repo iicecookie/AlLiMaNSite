@@ -2,7 +2,7 @@ export const littersList = [
     {
         litterId: 5, code: 'E', birthDate: '22.11.2020',
         motherName: 'Ksusha', motherCattery: 'Al.Li.MaN',
-        fatherName: 'Fth', fatherCattery: 'Al.Li.MaN',
+        fatherName: 'Chester', fatherCattery: 'PalMarino',
         kittens: [
             {
                 name: 'ervin', id: 18, litterId: 5, gender: 1, status: 'sold',
@@ -12,7 +12,7 @@ export const littersList = [
                 }
             },
             {
-                name: 'eva', id: 17, litterId: 5, gender: 0, status: 'sale',
+                name: 'eva', id: 17, litterId: 5, gender: 0, status: 'sold',
                 description: {
                     en: "A wonderful girl, with huge green eyes, a stuffed fur coat and an affectionate character. color golden ticked ny25.",
                     ru: "Замечательная девочка, с огромными зелеными глазками, набивной шубкой и ласковым характером. окрас золотой тиккированный ny25."
@@ -33,7 +33,7 @@ export const littersList = [
                 }
             },
             {
-                name: 'elfie', id: 14, litterId: 5, gender: 0, status: 'sold',
+                name: 'ellie', id: 14, litterId: 5, gender: 0, status: 'sale',
                 description: {
                     en: "",
                     ru: ""
@@ -54,7 +54,7 @@ export const littersList = [
                 }
             },
             {
-                name: 'dante', id: 12, litterId: 4, gender: 1, status: 'sale',
+                name: 'dante', id: 12, litterId: 4, gender: 1, status: 'sold',
                 description: {
                     en: "Scottish fold boy. Perfect fitting ears, large green eyes. The character is playful and at the same time affectionate. He loves pens very much, turns on the purr at the touch of a button",
                     ru: "Шотландский вислоухий мальчик. Идеальное прилегание ушек, большие зеленые глазки. Характер игривый и в то же время ласковый. Очень любит ручки, включает мурчалку от одного прикосновения"

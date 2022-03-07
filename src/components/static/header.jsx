@@ -50,8 +50,10 @@ function Header() {
                                 <li><Link to="/kittens">      {t('views.kittens')}</Link></li>
                                 <li><Link to="/our-cats">     {t('views.ourCats')}</Link></li>
                                 <li><Link to="/litters">      {t('views.pLitters')}</Link></li>
+                                {/*
                                 <li><Link to="/testimonials"> {t('views.testimonials')}</Link></li>
                                 <li><Link to="/files">        {t('views.wallpapers')}</Link></li>
+                                */}
                                 <li><Link to="/contacts">     {t('views.contacts')}</Link></li>
                             </ul>
                         </div>

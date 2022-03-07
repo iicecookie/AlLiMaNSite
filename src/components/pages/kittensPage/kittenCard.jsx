@@ -81,12 +81,10 @@ const KittenCard = (props) => {
                 {GetKittenDescription()}
                 {GetPhotoFrame()}
             </div>
-
-            <hr style={{visibility: isLastBlock() ? 'hidden' : 'visible'}}/>
         </div>
     );
 };
-
+//  <hr style={{visibility: isLastBlock() ? 'hidden' : 'visible'}}/>
 KittenCard.propTypes = {
     kitten: PropTypes.object.isRequired,
     kittenCount: PropTypes.number.isRequired,
