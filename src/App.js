@@ -10,11 +10,22 @@ import OneCatPage from "./components/pages/ourCatsPage/oneCatPage";
 import Home from "./components/pages/home/home";
 import ScrollToTop from "./components/scrollToTop";
 import ContactUsPage from "./components/pages/contactUsPage/contactUsPage";
+import {useTranslation} from "react-i18next";
 
 function App() {
 
+    const {i18n} = useTranslation();
+    const changeLanguage = () => {
+        let userLang = navigator.language || navigator.userLanguage;
+        if (userLang === "ru")
+            i18n.changeLanguage('ru');
+        else
+            i18n.changeLanguage('en');
+    };
+
     return (
         <BrowserRouter>
+            {changeLanguage()}
             <ScrollToTop>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
