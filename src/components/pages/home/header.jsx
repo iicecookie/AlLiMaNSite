@@ -28,6 +28,16 @@ function HomeHeader() {
         i18n.changeLanguage(language);
     };
 
+    let firstload = true;
+    const firstLanguageSet = () => {
+        if (!firstload) return;
+        let userLang = navigator.language || navigator.userLanguage;
+        if (userLang === "ru")
+            i18n.changeLanguage('ru');
+        else
+            i18n.changeLanguage('en');
+    };
+
     const {t} = useTranslation();
     return (<div className='no-padding'>
             <nav className={'nav sticker_in no-padding ' + nav} role="navigation">

@@ -48,7 +48,7 @@ const ContactsCard = () => {
                         <div className="contact_right">
                             <h2>{t("views.contactUs")}</h2>
                             <div className="contact_desc">
-                                <p>Our beautiful kittens and ca st you in your choice.</p>
+                                <p>{t("views.contactUsPage.about")}</p>
                             </div>
                             <div className="adress_wrap">
                                 <div className="adress">
@@ -59,15 +59,15 @@ const ContactsCard = () => {
                                 <div className="adress">
                                     <img src={locationIcon} className="icon icon-location"/>
                                     <a href="https://www.google.ru/maps/@55.7976464,37.6445659,10.78z/data=!5m1!1e1">
-                                        from Moscow, Korolyov</a>
+                                        {t("views.contactUsPage.from")}</a>
                                 </div>
                                 <div className="phone">
                                     <img src={phoneIcon} className="icon icon-phone"/>
-                                    <a href={mainTelephoneLink}>Call: {mainTelephone}</a>
+                                    <a href={mainTelephoneLink}>{t("views.contactUsPage.call")}: {mainTelephone}</a>
                                 </div>
                                 <div className="phone">
                                     <img src={whatsappIcon} className="icon icon-mail"/>
-                                    <a href={whatsappLink}>Write: {mainTelephone}</a>
+                                    <a href={whatsappLink}>{t("views.contactUsPage.write")}: {mainTelephone}</a>
                                 </div>
                                 <div className="email">
                                     <img src={telegramIcon} className="icon icon-mail"/>

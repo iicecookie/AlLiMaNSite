@@ -1,12 +1,6 @@
 import React from 'react';
 import {
-    facebookLink,
-    instagramLink,
-    mainTelephone,
-    mainTelephoneLink,
-    contactMail,
-    contactMailLink,
-    telegramGroupLink
+    facebookLink, instagramLink, mainTelephone, mainTelephoneLink, contactMail, contactMailLink, telegramGroupLink
 } from '../../contentData/Links.js';
 import {logo, facebookIcon, instagramIcon, telegramIcon} from "../../contentData/Icons";
 
