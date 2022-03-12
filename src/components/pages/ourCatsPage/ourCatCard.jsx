@@ -59,7 +59,7 @@ const OurCatCard = (props) => {
                             </span>
                         </p>
                     </div>
-
+                    {/*
                     <div className="">
                         <div className='d-flex flex-row justify-content-lg-start'>
                             <div className="block">
@@ -69,7 +69,7 @@ const OurCatCard = (props) => {
                                 <ImagePopUp Label={'test1'}/>
                             </div>
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
 
                 {GetPhotoFrame()}

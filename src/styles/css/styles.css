@@ -874,7 +874,6 @@ body.offcanvas {overflow: hidden}
 .page_header_wrap {margin-bottom: 60px; margin-top: 20px;}
 .litter_list .page_header_wrap {margin-bottom: 0px;}
 
-.page_header {background: url("../icons/page_header_bg.jpg") center center; position: relative; padding: 50px; text-align: center;}
 .page_header_cat {background-position: center  center; position: relative; padding: 50px; text-align: center;}
 .page_header__bg { position: absolute;
     top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%;   background: rgba(255, 255, 255, 0.8);}

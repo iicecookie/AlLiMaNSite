@@ -1,16 +1,41 @@
 import React from 'react';
 import {
-    facebookIcon, instagramIcon, locationIcon, phoneIcon, telegramIcon, whatsappIcon
+    facebookIcon, instagramIcon, locationIcon, phoneIcon, telegramIcon, vpnIcon, whatsappIcon, worldIcon
 } from "../../../contentData/Icons";
 import {
-    facebookLink, instagramLink, mainTelephone, mainTelephoneLink, telegramGroupLink, telegramPersonLink, telegramPersonTitle, whatsappLink
+    facebookLink,
+    instagramLink,
+    mainTelephone,
+    mainTelephoneLink,
+    telegramGroupLink,
+    telegramPersonLink,
+    telegramPersonTitle,
+    whatsappLink
 } from "../../../contentData/Links";
 
 import contactImg from '../../../contentData/homePage/images/contact.jpg';
 import {useTranslation} from "react-i18next";
+import i18n from "i18next";
 
 const ContactsCard = () => {
     const {t} = useTranslation();
+
+    function GetVpn() {
+        if (i18n.language === 'ru') {
+            return <div>
+                <div className="adress_wrap">
+                    <span>Если у вас есть проблемы с доступом:</span>
+                    <div className="adress">
+                        <a href="https://one.one.one.one/">
+                            <img className="icon" src={vpnIcon} alt="title"/>
+                        </a>
+                        <a href="https://one.one.one.one/">Рекомендуем использовать впн</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+
     return (
         <div>
             {/* Contact Us */}
@@ -27,9 +52,14 @@ const ContactsCard = () => {
                             </div>
                             <div className="adress_wrap">
                                 <div className="adress">
+                                    <img src={worldIcon} className="icon icon-location"/>
+                                    <a href="https://www.google.ru/maps/@55.7976464,37.6445659,10.78z/data=!5m1!1e1">
+                                        World Wide delivery</a>
+                                </div>
+                                <div className="adress">
                                     <img src={locationIcon} className="icon icon-location"/>
-                                    <a href="https://www.google.ru/maps/@55.7976464,37.6445659,10.78z/data=!5m1!1e1">Moscow,
-                                        Korolyov</a>
+                                    <a href="https://www.google.ru/maps/@55.7976464,37.6445659,10.78z/data=!5m1!1e1">
+                                        from Moscow, Korolyov</a>
                                 </div>
                                 <div className="phone">
                                     <img src={phoneIcon} className="icon icon-phone"/>
@@ -53,6 +83,8 @@ const ContactsCard = () => {
                                 <a href={telegramGroupLink}>
                                     <img className="icon icon-whatsapp" src={telegramIcon} alt="title"/></a>
                             </div>
+
+                            {GetVpn()}
                         </div>
                     </div>
                 </div>

@@ -36,8 +36,8 @@ export const ourCats = [
     {
         id: 1, name: 'Perseus', birthDate: '01.10.2021', gender: 1, cattery: 'Lively Purr',
         description: {
-            en: "British blue gold cat. BRI ay25 \n\t Handsome Bruno was born in our cattery, litter B. \n\t A big good-natured cat with unusual aquamarine eyes and a plush fur coat.",
-            ru: "British golden chinchilla. BRI ny12. Peach, a cat with an unusual golden, stuffed coat and emerald eyes. A very smart and affectionate boy. Favorite pastime is to stroke the back and scratch behind the ear"
+            en: "British golden chinchilla. BRI ny12. Peach, a cat with an unusual golden, stuffed coat and emerald eyes. A very smart and affectionate boy. Favorite pastime is to stroke the back and scratch behind the ear",
+            ru: "Британская золотая шиншилла. BRI ny12. Персик, кот с необыкновенной золотой, набивной шубкой и изумрудными глазами. Очень умный и ласковый мальчик. Любимое занятие это погладить спинку и почесать за ушком"
         }
     }
 ];

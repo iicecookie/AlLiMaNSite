@@ -5,3 +5,5 @@ export const facebookIcon = require('../styles/icons/facebook.png');
 export const whatsappIcon = require('../styles/icons/whatsapp.png');
 export const telegramIcon = require('../styles/icons/telegram.png');
 export const locationIcon = require('../styles/icons/location.png');
+export const vpnIcon = require('../styles/icons/vpn.png');
+export const worldIcon = require('../styles/icons/world.png');
