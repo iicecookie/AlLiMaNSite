@@ -78,6 +78,8 @@ const KittenCard = (props) => {
             <ParentLink litter={props.litter}/>
 
             <div className="row d-flex justify-content-around litter_list__item">
+            </div>
+            <div className="row d-flex justify-content-around litter_list__item">
                 {GetKittenDescription()}
                 {GetPhotoFrame()}
             </div>

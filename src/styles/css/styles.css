@@ -1790,7 +1790,9 @@ body.offcanvas {
 
 .litter_list__itemleft {
     display: flex;
-    justify-content: center;
+    /*test*/
+    justify-content: flex-start;
+    padding-top: calc(7%);
     flex-direction: column;
 
 }
@@ -3115,6 +3117,11 @@ blockquote p > cite {
 .hideHeader {
     height: 0px;
     overflow: hidden;
+}
+
+.hideHeader {
+
+    padding-top: 50px;
 }
 
 .cst1 {
