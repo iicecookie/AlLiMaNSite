@@ -22,7 +22,7 @@ const Home = () => {
 
     function getHeaderImages() {
         let images = [];
-        for (let i = 0; i < 6; i++) {
+        for (let i = 0; i < 5; i++) {
             images[i] = {
                 original: require(`/src/contentData/homePage/images/home${i + 1}.jpg`),
                 thumbnail: require(`/src/contentData/homePage/images/home${i + 1}.jpg`),
