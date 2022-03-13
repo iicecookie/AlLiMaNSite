@@ -6,16 +6,12 @@ import {facebookIcon, instagramIcon, telegramIcon, whatsappIcon} from "../../../
 
 function HomeHeader() {
 
-    const [nav, setNav] = useState("nav");
-
-    const listenScrollEvent = event => {
-        if (window.scrollY > 400) {
-            return setNav("padding");
-        } else {
-            return setNav("hidden");
-        }
+    const {i18n} = useTranslation();
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
     };
 
+    const [nav, setNav] = useState("nav");
     useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
         window.addEventListener('load', listenScrollEvent);
@@ -23,24 +19,19 @@ function HomeHeader() {
         return () => window.removeEventListener("scroll", listenScrollEvent);
     }, []);
 
-    const {i18n} = useTranslation();
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    let firstload = true;
-    const firstLanguageSet = () => {
-        if (!firstload) return;
-        let userLang = navigator.language || navigator.userLanguage;
-        if (userLang === "ru")
-            i18n.changeLanguage('ru');
-        else
-            i18n.changeLanguage('en');
+    const listenScrollEvent = event => {
+        if (window.scrollY > 400) {
+            setNav("showHeader");
+            if (window.innerWidth < 1000)
+                setNav("mobilePadding");
+        } else {
+            setNav("hideHeader");
+        }
     };
 
     const {t} = useTranslation();
     return (<div className='no-padding'>
-            <nav className={'nav sticker_in no-padding ' + nav} role="navigation">
+            <nav className={'hideHeader nav sticker_in no-padding ' + nav} role="navigation">
                 <div className="container-fluid">
                     <div className="row no-gutters header_in ">
 
@@ -51,8 +42,10 @@ function HomeHeader() {
                                         <li><Link to="/kittens">      {t('views.kittens')}</Link></li>
                                         <li><Link to="/our-cats">     {t('views.ourCats')}</Link></li>
                                         <li><Link to="/litters">      {t('views.pLitters')}</Link></li>
+                                        {/*
                                         <li><Link to="/testimonials"> {t('views.testimonials')}</Link></li>
                                         <li><Link to="/files">        {t('views.wallpapers')}</Link></li>
+                                        */}
                                         <li><Link to="/contacts">     {t('views.contacts')}</Link></li>
                                     </ul>
                                 </div>
@@ -72,7 +65,7 @@ function HomeHeader() {
                                 <img className="icon icon-whatsapp" src={telegramIcon} alt="title"/></a>
                         </div>
 
-                        <div className="col-auto menusocial">
+                        <div className="">
                             <button className='flag-btn'>
                                 <img className='flag'
                                      src={require("../../../styles/icons/UsFlag.png")}

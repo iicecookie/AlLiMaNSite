@@ -33,6 +33,11 @@ function Header() {
         i18n.changeLanguage(language);
     };
 
+    function GetTitle() {
+        if (window.innerWidth > 1000)
+            return <div><Link to="/home">{t("title")} <span>{t("cattery")}</span></Link></div>
+    }
+
     const {t} = useTranslation();
     return (
         <div>
@@ -42,7 +47,7 @@ function Header() {
                         <div className="col-auto">
                             <div className="logo">
                                 <Link to="/home"> <img src={logo} alt="title"/></Link>
-                                <div><Link to="/home">{t("title")} <span>{t("cattery")}</span></Link></div>
+                                {GetTitle()}
                             </div>
                         </div>
                         <div className="col-auto ">
@@ -66,12 +71,12 @@ function Header() {
                                 <img className="icon icon-whatsapp" src={telegramIcon} alt="title"/></a>
                         </div>
 
-                        <div className="col-auto menusocial">
-                                <button className='flag-btn'>
-                                    <img className='flag'
-                                         src={require("../../styles/icons/UsFlag.png")}
-                                         onClick={() => changeLanguage('en')}/>
-                                </button>
+                        <div className="">
+                            <button className='flag-btn'>
+                                <img className='flag'
+                                     src={require("../../styles/icons/UsFlag.png")}
+                                     onClick={() => changeLanguage('en')}/>
+                            </button>
                             <button className='flag-btn'>
                                 <img className='flag' src={require("../../styles/icons/RuFlag.png")}
                                      onClick={() => changeLanguage('ru')}/>

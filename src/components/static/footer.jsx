@@ -10,13 +10,18 @@ import {Link} from "react-router-dom";
 const Footer = () => {
     const {t} = useTranslation();
 
+    function GetLogo() {
+        if (window.innerWidth > 1000)
+            return <a><img src={logo} alt="title"/></a>
+    }
+
     return (<div className="main-container">
         <footer className={'footer'}>
             <div className="row ">
 
                 <div className="col-md-3">
                     <div className="footer__logo">
-                        <a><img src={logo} alt="title"/></a>
+                        {GetLogo()}
                         <div><a>{t('title')} <span>{t('cattery')}</span></a></div>
                     </div>
                 </div>
