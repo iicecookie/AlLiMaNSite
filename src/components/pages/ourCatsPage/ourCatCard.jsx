@@ -42,7 +42,7 @@ const OurCatCard = (props) => {
         <div className="shadow p-3 mb-5 bg-white rounded">
             <div className="js_shop row d-flex litter_list__item">
                 <div className="col-md-4 litter_list__itemleft">
-                    <Link to="/our-cats/gentlemen/george-peace-coon-lorettabritish"
+                    <Link to={"/our-cats/" + props.cat.name}
                           className="litter_list__item-name">{props.cat.name} {props.cat.cattery}
                     </Link>
 

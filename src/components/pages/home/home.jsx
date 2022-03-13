@@ -50,10 +50,12 @@ const Home = () => {
                         <nav className="main-nav">
                             <ul className="scrollmenu">
                                 <li><Link to="/kittens" className="internal">{t('views.kittens')}</Link></li>
-                                <li><Link to="/our_cats" className="internal">{t('views.ourCats')}</Link></li>
+                                <li><Link to="/our-cats" className="internal">{t('views.ourCats')}</Link></li>
                                 <li><Link to="/litters" className="external">{t('views.pLitters')}</Link></li>
+                                {/*
                                 <li><Link to="/testimonials" className="internal">{t('views.testimonials')}</Link></li>
                                 <li><Link to="/wallpapers" className="external">{t('views.wallpapers')}</Link></li>
+                                */}
                                 <li><Link to="/contacts" className="internal">{t('views.contacts')}</Link></li>
                             </ul>
                         </nav>
