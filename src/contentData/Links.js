@@ -1,7 +1,7 @@
 export const mainTelephone = '+7(925)561-95-80';
 export const mainTelephoneLink = 'tel:+79255619580';
 
-export const contactMail = 'maximbu@mail.ru';
+export const contactMail = 'allimancattetry@gmail.com';
 export const contactMailLink = 'mailto:'+contactMail;
 
 export const instagramLink  = 'https://www.instagram.com/al.li.man/';

@@ -52,11 +52,6 @@ const ContactsCard = () => {
                             </div>
                             <div className="adress_wrap">
                                 <div className="adress">
-                                    <img src={worldIcon} className="icon icon-location"/>
-                                    <a href="https://www.google.ru/maps/@55.7976464,37.6445659,10.78z/data=!5m1!1e1">
-                                        World Wide delivery</a>
-                                </div>
-                                <div className="adress">
                                     <img src={locationIcon} className="icon icon-location"/>
                                     <a href="https://www.google.ru/maps/@55.7976464,37.6445659,10.78z/data=!5m1!1e1">
                                         {t("views.contactUsPage.from")}</a>
